@@ -26,9 +26,15 @@ window.Echo.channel('students')
             3: "3rd Year",
             4: "4th Year",
         };
+
+        console.log(alertBox);
         
         if (alertBox) {
-            alertBox.innerHTML = '<div class="alert alert-success">New Student added: ' + e.first_name + " " + e.last_name + '</div>';
+            alertBox.innerHTML = `
+                <div class="px-4 py-3 rounded-lg border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/30 text-sm text-green-700 dark:text-green-300">
+                    New Student added: ${e.first_name} ${e.last_name}
+                </div>
+            `;
         }
         
         if (tableBody) {

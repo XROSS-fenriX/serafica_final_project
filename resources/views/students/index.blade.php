@@ -21,8 +21,8 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
+            <div id="student-alert"></div>
             @if (session('status') === 'student-created')
-                <div id="student-alert"></div>
                 <div class="px-4 py-3 rounded-lg border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/30 text-sm text-green-700 dark:text-green-300">
                     {{ __('Student created successfully.') }}
                 </div>
