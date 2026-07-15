@@ -20,4 +20,4 @@ Route::middleware('auth')->group(function () {
     Route::resource('students', StudentController::class)->except(['show']);
 });
 
-require __DIR__.'/auth.php';
+// require __DIR__.'/auth.php';
